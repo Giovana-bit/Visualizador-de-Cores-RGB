@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Cores RGB</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selecione as Cores RGB: </h1>
+        <div class="inputs">
+            <div>
+                <label for="red">Vermelho:</label>
+                <input type="range" id="red" min="0" max="255" value="0">
+                <input type="text" id="red-value" readonly value="0">
+            </div>
+            <div>
+                <label for="green">Verde:</label>
+                <input type="range" id="green" min="0" max="255" value="0">
+                <input type="text" id="green-value" readonly value="0">
+            </div>
+            <div>
+                <label for="blue">Azul:</label>
+                <input type="range" id="blue" min="0" max="255" value="0">
+                <input type="text" id="blue-value" readonly value="0">
+            </div>
+        </div>
+        <div class="color-box" style="background-color: rgb(0, 0, 0);"></div>
+    </div>
+    <script src="Js/script.js" defer></script>
+</body>
+</html>
